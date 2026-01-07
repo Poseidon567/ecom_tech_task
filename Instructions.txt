@@ -15,7 +15,7 @@ CREATE USER myuser WITH PASSWORD 'mypassword';
 # Дайте права пользователю
 GRANT ALL PRIVILEGES ON DATABASE mydatabase TO myuser;
 
-4. Изменение строки подключения в файле main_api.py на необходимый ip
+4. Изменение строки подключения в файле my_app/main_api.py на необходимый ip
 
 5.Запуск файла my_app/main_api.py в консоли(из корневой папки проекта)
 
