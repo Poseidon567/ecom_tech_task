@@ -1,0 +1,24 @@
+Требования к системе
+1. Программное обеспечение
+Python 3.8 или выше
+PostgreSQL 12 или выше
+
+2. Зависимости Python
+Убедитесь, что у вас установлены все необходимые пакеты.
+
+3: Настройка базы данных PostgreSQL
+sudo -u postgres psql
+# Создайте базу данных
+CREATE DATABASE mydatabase;
+# Создайте пользователя
+CREATE USER myuser WITH PASSWORD 'mypassword';
+# Дайте права пользователю
+GRANT ALL PRIVILEGES ON DATABASE mydatabase TO myuser;
+
+4. Изменение строки подключения в файле main_api.py на необходимый ip
+
+5.Запуск файла main_api.py из консоли(из виртуального окружения)
+
+6.Проверка работоспособности из http://localhost:8000/docs
+
+7. Запуск тестов из консоли командой pytest
